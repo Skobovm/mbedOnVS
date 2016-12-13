@@ -1,0 +1,10 @@
+C:\LLILUM\llilum\VisualStudio\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\bin\Debug\ProjectTemplates\LlilumApplication\1033\LlilumApplication.zip
+C:\LLILUM\llilum\VisualStudio\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\LlilumApplication.ProjectTemplate.csprojResolveAssemblyReference.cache
+C:\LLILUM\llilum\VisualStudio\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\LlilumApplication\1033\LlilumApplication.zip
+C:\LLILUM\llilum\VisualStudio\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\LlilumApplication.dll
+C:\LLILUM\llilum\VisualStudio\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\LlilumApplication.pdb
+C:\MbedOnVs\mbedOnVS\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\bin\Debug\ProjectTemplates\LlilumApplication\1033\LlilumApplication.zip
+C:\MbedOnVs\mbedOnVS\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\LlilumApplication.ProjectTemplate.csprojResolveAssemblyReference.cache
+C:\MbedOnVs\mbedOnVS\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\LlilumApplication\1033\LlilumApplication.zip
+C:\MbedOnVs\mbedOnVS\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\LlilumApplication.dll
+C:\MbedOnVs\mbedOnVS\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\LlilumApplication.pdb

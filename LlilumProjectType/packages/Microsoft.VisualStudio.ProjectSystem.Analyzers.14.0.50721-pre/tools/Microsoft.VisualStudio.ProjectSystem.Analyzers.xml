@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.VisualStudio.ProjectSystem.Analyzers</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:Microsoft.VisualStudio.ProjectSystem.Analyzers.DataflowLinkToAnalyzer" -->
+        <member name="T:Microsoft.VisualStudio.ProjectSystem.Analyzers.DataflowLinkOptionsCreationAnalyzer">
+             <summary>
+             Analyze the code which create the <see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions"/> objects, and report warnings if the code does not initialize
+             the property <see cref="P:System.Threading.Tasks.Dataflow.DataflowLinkOptions.PropagateCompletion"/> to <c>true</c>.
+             </summary>
+             <remarks>
+             [Background] We have observed a few hangs due to the fact that the source dataflow block was faulty, but
+             the fault was not propagated to the target dataflow block which is the default behavior anyway, and other
+             code path was hanging on waiting for the result from the target dataflow block. The hangs could be mitigated
+             by ensuring the fault is being propagated through the dataflow links. The <see cref="T:Microsoft.VisualStudio.ProjectSystem.Analyzers.DataflowLinkToAnalyzer"/> analyzer ensures
+             there must be a valid <see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions"/> object being passed to LinkTo methods. This analyzer ensures the
+             <see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions"/> objects must be created appropriately.
+            
+             i.e.
+               var op = new DataflowLinkOptions(); /* This analyzer will report warning on this creation code. */
+             </remarks>
+        </member>
+        <member name="T:Microsoft.VisualStudio.ProjectSystem.Analyzers.DerivedDataflowLinkOptionsAnalyzer">
+             <summary>
+             Analyze the class code the derives from <see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions"/>, and report warnings if the constructor does not initialize
+             the property <see cref="P:System.Threading.Tasks.Dataflow.DataflowLinkOptions.PropagateCompletion"/> to <c>true</c>, or it does not have a constructor.
+             </summary>
+             <remarks>
+             [Background] We have observed a few hangs due to the fact that the source dataflow block was faulty, but
+             the fault was not propagated to the target dataflow block which is the default behavior anyway, and other
+             code path was hanging on waiting for the result from the target dataflow block. The hangs could be mitigated
+             by ensuring the fault is being propagated through the dataflow links. The <see cref="T:Microsoft.VisualStudio.ProjectSystem.Analyzers.DataflowLinkToAnalyzer"/> analyzer ensures
+             there must be a valid <see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions"/> object being passed to LinkTo methods. The <see cref="T:Microsoft.VisualStudio.ProjectSystem.Analyzers.DataflowLinkOptionsCreationAnalyzer"/>
+             analyzer ensures the <see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions"/> objects must be created appropriately. This analyzer ensures the derived class
+             is also being covered appropriately.
+            
+             i.e.
+               class Test : DataflowLinkOptions  /* This analyzer will reporting warning on this class because there is no constructor to initialize PropagateCompletion. */
+               {
+               }
+            
+               class Test : DataflowLinkOptions
+               {
+                 internal Test()  /* This analyzer will reporting warning on this constructor because it does not initialize PropagateCompletion to true. */
+                 {
+                 }
+               }
+             </remarks>
+        </member>
+    </members>
+</doc>

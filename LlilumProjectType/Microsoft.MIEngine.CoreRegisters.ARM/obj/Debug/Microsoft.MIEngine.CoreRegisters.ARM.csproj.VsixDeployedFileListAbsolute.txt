@@ -1,0 +1,6 @@
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Steve Maillet\Microsoft.MIEngine.CoreRegisters.ARM\1.0\\Microsoft.MIEngine.CoreRegisters.ARM.dll
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Steve Maillet\Microsoft.MIEngine.CoreRegisters.ARM\1.0\\Microsoft.MIEngine.CoreRegisters.ARM.pdb
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Steve Maillet\Microsoft.MIEngine.CoreRegisters.ARM\1.0\\Microsoft.MIDebugEngine.dll
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Steve Maillet\Microsoft.MIEngine.CoreRegisters.ARM\1.0\\Sprache.dll
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Steve Maillet\Microsoft.MIEngine.CoreRegisters.ARM\1.0\\Microsoft.MIEngine.CoreRegisters.ARM.pkgdef
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\Steve Maillet\Microsoft.MIEngine.CoreRegisters.ARM\1.0\\extension.vsixmanifest

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright, Microsoft Corporation, All rights reserved.-->
+        
+<!--TODO: Update the following files with the specified content
+
+    *BuildSystem\DeployedBuildSystem\CustomProject.Default.props* - update the value of the existing DebuggerFlavor element to use the new debugger
+    <PropertyGroup>
+      <DebuggerFlavor>LlilumDebugger</DebuggerFlavor>
+    </PropertyGroup>
+-->
+<Rule
+	Name="LlilumDebugger"
+	DisplayName="Llilum Debugger"
+	PageTemplate="debugger"
+	Description="Llilum Debugger options"
+	xmlns="http://schemas.microsoft.com/build/2009/properties">
+    <Rule.DataSource>
+        <DataSource Persistence="UserFileWithXamlDefaults" />
+    </Rule.DataSource>
+
+    <StringProperty Name="LlilumDebuggerCommand" DisplayName="Command"
+                Default="$(TargetPath)"
+                Description="The debug command to execute.">
+        <StringProperty.ValueEditors>
+            <ValueEditor EditorType="DefaultFindFullPathPropertyEditor" DisplayName="&lt;regsvr32.exe&gt;">
+                <ValueEditor.Metadata>
+                    <NameValuePair Name="Exename" Value="regsvr32.exe" />
+                </ValueEditor.Metadata>
+            </ValueEditor>
+            <ValueEditor EditorType="DefaultStringPropertyEditor" DisplayName="&lt;Edit...&gt;"/>
+            <ValueEditor EditorType="DefaultFilePropertyEditor" DisplayName="&lt;Browse...&gt;">
+                <ValueEditor.Metadata>
+                    <NameValuePair Name="Filters" Value="Executables (*.exe)|*.exe" />
+                </ValueEditor.Metadata>
+            </ValueEditor>
+        </StringProperty.ValueEditors>
+    </StringProperty>
+
+    <StringProperty Name="LlilumDebuggerCommandArguments" DisplayName="Command Arguments"
+                Description="The command line arguments to pass to the application.">
+        <Argument Property="LlilumDebuggerCommand" />
+    </StringProperty>
+    <StringProperty Name="LlilumDebuggerSolutionDirectory" DisplayName="Solution Directory"
+                Default="$(SolutionDir)"
+                Description="Base directory of the solution.">
+        <Argument Property="LlilumDebuggerSolutionDirectory" />
+    </StringProperty>
+    <StringProperty Name="LlilumDebuggerOutputName" DisplayName="Llilum Binary Name"
+                Default='"$(LlilumOutputName)"'
+                Description="Name of the Llilum output binary.">
+        <Argument Property="LlilumDebuggerOutputName" />
+    </StringProperty>
+    <StringProperty Name="LlilumSDKPath" DisplayName="Llilum SDK Path"
+                Default='"$(LlilumSDK)"'
+                Description="Llilum SDK Path">
+        <Argument Property="LlilumSDKPath" />
+    </StringProperty>
+    <StringProperty Name="LlilumOutputBin" DisplayName="Llilum Output Bin"
+                Default="$(OutDir)\$(LlilumOutputName).bin"
+                Description="Llilum Output Bin">
+        <StringProperty.ValueEditors>
+            <ValueEditor EditorType="DefaultStringPropertyEditor" DisplayName="&lt;Edit...&gt;"/>
+            <ValueEditor EditorType="DefaultFilePropertyEditor" DisplayName="&lt;Browse...&gt;">
+                <ValueEditor.Metadata>
+                    <NameValuePair Name="Filters" Value="Bin Files (*.bin)|*.bin" />
+                </ValueEditor.Metadata>
+            </ValueEditor>
+        </StringProperty.ValueEditors>
+    </StringProperty>
+    <StringProperty Name="LlilumDebuggerWorkingDirectory" DisplayName="Working Directory"
+                Default="$(MSBuildProjectDirectory)"  
+                Description="The application's working directory. By default, the directory containing the project file."
+                Subtype="folder"/>
+    <BoolProperty Name="LlilumDebuggerDebuggerAttach" DisplayName="Attach"
+                Default="False"
+                Description="Specifies whether the debugger should attempt to attach to an existing process when debugging starts." />
+    <StringProperty Name="LlilumPyOcdPath" DisplayName="Llilum Py Ocd"
+                Default="$(LlilumSDK)tools\pyocd_win.exe"
+                Description="Llilum Py Ocd">
+        <Argument Property="LlilumPyOcdPath" />
+    </StringProperty>
+    <StringProperty Name="LlilumPyOcdArgs" DisplayName="Llilum Py Ocd Args"
+                Description="Llilum Py Ocd Args">
+        <Argument Property="LlilumPyOcdArgs" />
+    </StringProperty>
+    <StringProperty Name="LlilumOpenOcdPath" DisplayName="Llilum Open Ocd"
+                Default="$(LlilumSDK)tools\openocd\bin-x64\openocd.exe"
+                Description="Llilum Py Ocd">
+        <Argument Property="LlilumPyOcdPath" />
+    </StringProperty>
+    <StringProperty Name="LlilumOpenOcdArgs" DisplayName="Llilum Open Ocd Args"
+                Description="Llilum Py Ocd Args"
+                Default="-f $(LlilumSDK)tools\openocd\scripts\interface\$(LlilumOpenOcdInterfaceCfg) -f $(LlilumSDK)tools\openocd\scripts\board\$(LlilumOpenOcdBoardCfg)">
+        <Argument Property="LlilumPyOcdArgs" />
+    </StringProperty>
+    <StringProperty Name="LlilumFlashToolPath" DisplayName="Llilum Flash Tool"
+                Default='"$(LlilumSDK)tools\flash_tool.exe"'
+                Description="Llilum Flash Tool">
+        <Argument Property="LlilumFlashToolPath" />
+    </StringProperty>
+    <StringProperty Name="LlilumFlashToolArgs" DisplayName="Llilum Flash Tool Args"
+                Description="Llilum Flash Tool Args">
+        <Argument Property="LlilumFlashToolArgs" />
+    </StringProperty>
+    <!-- NOTE: The ST-Link Utility path is the default install path for the tool -->
+    <StringProperty Name="LlilumSTLinkUtilityPath" DisplayName="ST-Link Utility Path"
+                Default='"C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility\ST-LINK_CLI.exe"'
+                Description="ST-Link Utility Path">
+        <Argument Property="LlilumSTLinkUtilityPath" />
+    </StringProperty>
+    <StringProperty Name="LlilumSTLinkUtilityConnectArgs" DisplayName="ST-Link Utility Connect Args"
+                Description="ST-Link Utility Args for connecting to a board"
+                Default="-c ID=0 SWD UR">
+        <Argument Property="LlilumSTLinkUtilityConnectArgs" />
+    </StringProperty>
+    <StringProperty Name="LlilumSTLinkUtilityEraseArgs" DisplayName="ST-Link Utility Erase Args"
+                Description="ST-Link Utility Args for erasing a chip"
+                Default="-ME">
+        <Argument Property="LlilumSTLinkUtilityEraseArgs" />
+    </StringProperty>
+    <StringProperty Name="LlilumSTLinkUtilityProgramArgs" DisplayName="ST-Link Utility Programming Args"
+                Description="ST-Link Utility Args for programming a chip"
+                Default="-P $(OutDir)\$(LlilumOutputName).hex -ClrBP -HardRst -Halt">
+        <Argument Property="LlilumSTLinkUtilityEraseArgs" />
+    </StringProperty>
+    <StringProperty Name="LlilumGdbPath" DisplayName="Llilum GDB Path"
+                Default="$(LLILUM_GCC)bin\arm-none-eabi-gdb.exe"
+                Description="Llilum GDB Path">
+        <Argument Property="LlilumGdbPath" />
+    </StringProperty>
+    <StringProperty Name="LlilumGdbArgs" DisplayName="Llilum GDB Args"
+                Description="Llilum GDB Args">
+        <Argument Property="LlilumGdbArgs" />
+    </StringProperty>
+    <StringProperty Name="LlilumDriveToCopyTo" DisplayName="Drive To Copy Binary To"
+                Description="Drive To Copy Binary To">
+        <Argument Property="LlilumDriveToCopyTo" />
+    </StringProperty>
+    <EnumProperty Name="LlilumGdbServerOption" DisplayName="Llilum GDB Server"
+                  Description="Which GDB server should be used for debugging"
+                  Default="pyocd">
+        <EnumValue Name="pyocd" DisplayName="pyOCD">
+            <Argument Property="LlilumGdbServerOption"></Argument>
+        </EnumValue>
+        <EnumValue Name="openocd" DisplayName="OpenOCD">
+            <Argument Property="LlilumGdbServerOption"></Argument>
+        </EnumValue>
+    </EnumProperty>
+    <EnumProperty Name="LlilumDeployTool" DisplayName="Llilum Deploy Tool"
+                  Description="Which tool should be used for deploying"
+                  Default="pyocdflashtool">
+        <EnumValue Name="pyocdflashtool" DisplayName="pyOCD Flash Tool"></EnumValue>
+        <EnumValue Name="stlinkutility" DisplayName="ST-Link v2 Utility"></EnumValue>
+        <EnumValue Name="copytodrive" DisplayName="Copy To Drive"></EnumValue>
+        <EnumValue Name="gdbloadcommand" DisplayName="GDB Load Command"></EnumValue>
+        <EnumValue Name="nodeploy" DisplayName="Do Not Deploy"></EnumValue>
+    </EnumProperty>
+</Rule>

@@ -1,0 +1,7 @@
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Llilum Application VSIX\1.0\\LlilumApplication.dll
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Llilum Application VSIX\1.0\\Microsoft.MIDebugEngine.dll
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Llilum Application VSIX\1.0\\LlilumApplication.pkgdef
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Llilum Application VSIX\1.0\\extension.vsixmanifest
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Llilum Application VSIX\1.0\\MITLicense.txt
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Llilum Application VSIX\1.0\ProjectTemplates\LlilumApplication\\1033\LlilumApplication.zip
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Llilum Application VSIX\1.0\\LlilumApplication.pdb

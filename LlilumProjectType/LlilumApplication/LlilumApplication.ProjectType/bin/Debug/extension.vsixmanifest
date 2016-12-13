@@ -1,0 +1,22 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="LlilumApplication.ProjectType..69a3bd88-0aa9-43e2-a2af-f930857c44e7" Version="1.0" Language="en-US" Publisher="LlilumApplication.ProjectType" />
+    <DisplayName>Llilum Application VSIX</DisplayName>
+    <Description xml:space="preserve">A template for creating a Llilum Application project.</Description>
+    <MoreInfo>https://github.com/NETMF/llilum</MoreInfo>
+    <License>MITLicense.txt</License>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="14.0" />
+  </Installation>
+  <Dependencies>
+    <!--<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.6" />-->
+    <!--<Dependency d:Source="Installed" Id="B73A99D8-FCAA-4197-9122-F8ABA095A72F" DisplayName="Visual Studio Common Project System v14" Version="[11.2,14.0)" />-->
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="LlilumApplication.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="LlilumApplication.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="ProjectTemplates" />
+    <!--<Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="Microsoft.MIEngine.CoreRegisters.ARM" Path="|Microsoft.MIEngine.CoreRegisters.ARM;PkgdefProjectOutputGroup|" />-->
+  </Assets>
+</PackageManifest>
