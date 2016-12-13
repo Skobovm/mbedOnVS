@@ -1,0 +1,5 @@
+C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectTemplate\bin\Debug\ProjectTemplates\VC\1033\MbedProject.zip
+C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectTemplate\obj\Debug\MbedProject.ProjectTemplate.csprojResolveAssemblyReference.cache
+C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectTemplate\obj\Debug\VC\1033\MbedProject.zip
+C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectTemplate\obj\Debug\MbedProject.dll
+C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectTemplate\obj\Debug\MbedProject.pdb

@@ -1,0 +1,4 @@
+C:\MbedOnVs\mbedOnVS\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\bin\Debug\ProjectTemplates\MbedApplication\1033\LlilumApplication.zip
+C:\MbedOnVs\mbedOnVS\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\MbedApplication\1033\LlilumApplication.zip
+C:\MbedOnVs\mbedOnVS\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\LlilumApplication.dll
+C:\MbedOnVs\mbedOnVS\LlilumProjectType\LlilumApplication\LlilumApplication.ProjectTemplate\obj\Debug\LlilumApplication.pdb

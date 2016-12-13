@@ -1,0 +1,7 @@
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MbedProject.ProjectType\MbedProject VSIX\1.0\\MbedProject.dll
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MbedProject.ProjectType\MbedProject VSIX\1.0\\Microsoft.MIDebugEngine.dll
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MbedProject.ProjectType\MbedProject VSIX\1.0\\Microsoft.MIDebugPackage.dll
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MbedProject.ProjectType\MbedProject VSIX\1.0\\MbedProject.pkgdef
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MbedProject.ProjectType\MbedProject VSIX\1.0\\extension.vsixmanifest
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MbedProject.ProjectType\MbedProject VSIX\1.0\ProjectTemplates\VC\\1033\MbedProject.zip
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MbedProject.ProjectType\MbedProject VSIX\1.0\\MbedProject.pdb

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    TODO: Reference the rule from the targets file using the PropertyPageSchema tag
+    
+    Example: Including the following in the targets file will add a new property page in the project properties dialog.
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)Rules\MbedDebugger.xaml;">
+      <Context>Project</Context>
+    </PropertyPageSchema>
+    
+    For more information, please refer to the following blog post:
+    http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx
+-->
+<Rule
+	Name="MbedDebugger"
+	DisplayName="MbedDebugger"
+	PageTemplate="tool"
+	Description="MbedDebugger Description"
+	xmlns="http://schemas.microsoft.com/build/2009/properties">
+    <Rule.DataSource>
+        <DataSource Persistence="ProjectFile" HasConfigurationCondition="True"/>
+    </Rule.DataSource>
+
+    <Rule.Categories>
+        <Category Name="General" DisplayName="General"/>
+    </Rule.Categories>
+
+    <!--
+    <Rule.DataSource>
+        <DataSource Persistence="UserFileWithXamlDefaults" />
+    </Rule.DataSource>
+    -->
+
+    <StringProperty Name="MbedDebuggerCommand" DisplayName="Command"
+                Default="$(TargetPath)"
+                Description="The debug command to execute.">
+        <StringProperty.ValueEditors>
+            <ValueEditor EditorType="DefaultFindFullPathPropertyEditor" DisplayName="&lt;regsvr32.exe&gt;">
+                <ValueEditor.Metadata>
+                    <NameValuePair Name="Exename" Value="regsvr32.exe" />
+                </ValueEditor.Metadata>
+            </ValueEditor>
+            <ValueEditor EditorType="DefaultStringPropertyEditor" DisplayName="&lt;Edit...&gt;"/>
+            <ValueEditor EditorType="DefaultFilePropertyEditor" DisplayName="&lt;Browse...&gt;">
+                <ValueEditor.Metadata>
+                    <NameValuePair Name="Filters" Value="Executables (*.exe)|*.exe" />
+                </ValueEditor.Metadata>
+            </ValueEditor>
+        </StringProperty.ValueEditors>
+    </StringProperty>
+
+    <StringProperty Name="MbedDebuggerCommandArguments" DisplayName="Command Arguments"
+                Description="The command line arguments to pass to the application.">
+        <Argument Property="MbedDebuggerCommand" />
+    </StringProperty>
+    <StringProperty Name="MbedDebuggerSolutionDirectory" DisplayName="Solution Directory"
+                Default="$(SolutionDir)"
+                Description="Base directory of the solution.">
+        <Argument Property="MbedDebuggerSolutionDirectory" />
+    </StringProperty>
+    <StringProperty Name="MbedDebuggerOutputName" DisplayName="Mbed Binary Name"
+                Default='"$(MbedOutputName)"'
+                Description="Name of the Mbed output binary.">
+        <Argument Property="MbedDebuggerOutputName" />
+    </StringProperty>
+    <StringProperty Name="MbedSDKPath" DisplayName="Mbed SDK Path"
+                Default='"$(MbedSDK)"'
+                Description="Mbed SDK Path">
+        <Argument Property="MbedSDKPath" />
+    </StringProperty>
+    <StringProperty Name="MbedOutputBin" DisplayName="Mbed Output Bin"
+                Default="$(OutDir)\$(MbedOutputName).bin"
+                Description="Mbed Output Bin">
+        <StringProperty.ValueEditors>
+            <ValueEditor EditorType="DefaultStringPropertyEditor" DisplayName="&lt;Edit...&gt;"/>
+            <ValueEditor EditorType="DefaultFilePropertyEditor" DisplayName="&lt;Browse...&gt;">
+                <ValueEditor.Metadata>
+                    <NameValuePair Name="Filters" Value="Bin Files (*.bin)|*.bin" />
+                </ValueEditor.Metadata>
+            </ValueEditor>
+        </StringProperty.ValueEditors>
+    </StringProperty>
+    <StringProperty Name="MbedDebuggerWorkingDirectory" DisplayName="Working Directory"
+                Default="$(MSBuildProjectDirectory)"  
+                Description="The application's working directory. By default, the directory containing the project file."
+                Subtype="folder"/>
+    <BoolProperty Name="MbedDebuggerDebuggerAttach" DisplayName="Attach"
+                Default="False"
+                Description="Specifies whether the debugger should attempt to attach to an existing process when debugging starts." />
+    <StringProperty Name="MbedPyOcdPath" DisplayName="Mbed Py Ocd"
+                Default="$(MbedSDK)tools\pyocd_win.exe"
+                Description="Mbed Py Ocd">
+        <Argument Property="MbedPyOcdPath" />
+    </StringProperty>
+    <StringProperty Name="MbedPyOcdArgs" DisplayName="Mbed Py Ocd Args"
+                Description="Mbed Py Ocd Args">
+        <Argument Property="MbedPyOcdArgs" />
+    </StringProperty>
+    <StringProperty Name="MbedOpenOcdPath" DisplayName="Mbed Open Ocd"
+                Default="$(MbedSDK)tools\openocd\bin-x64\openocd.exe"
+                Description="Mbed Py Ocd">
+        <Argument Property="MbedPyOcdPath" />
+    </StringProperty>
+    <StringProperty Name="MbedOpenOcdArgs" DisplayName="Mbed Open Ocd Args"
+                Description="Mbed Py Ocd Args"
+                Default="-f $(MbedSDK)tools\openocd\scripts\interface\$(MbedOpenOcdInterfaceCfg) -f $(MbedSDK)tools\openocd\scripts\board\$(MbedOpenOcdBoardCfg)">
+        <Argument Property="MbedPyOcdArgs" />
+    </StringProperty>
+    <StringProperty Name="MbedFlashToolPath" DisplayName="Mbed Flash Tool"
+                Default='"$(MbedSDK)tools\flash_tool.exe"'
+                Description="Mbed Flash Tool">
+        <Argument Property="MbedFlashToolPath" />
+    </StringProperty>
+    <StringProperty Name="MbedFlashToolArgs" DisplayName="Mbed Flash Tool Args"
+                Description="Mbed Flash Tool Args">
+        <Argument Property="MbedFlashToolArgs" />
+    </StringProperty>
+    <!-- NOTE: The ST-Link Utility path is the default install path for the tool -->
+    <StringProperty Name="MbedSTLinkUtilityPath" DisplayName="ST-Link Utility Path"
+                Default='"C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility\ST-LINK_CLI.exe"'
+                Description="ST-Link Utility Path">
+        <Argument Property="MbedSTLinkUtilityPath" />
+    </StringProperty>
+    <StringProperty Name="MbedSTLinkUtilityConnectArgs" DisplayName="ST-Link Utility Connect Args"
+                Description="ST-Link Utility Args for connecting to a board"
+                Default="-c ID=0 SWD UR">
+        <Argument Property="MbedSTLinkUtilityConnectArgs" />
+    </StringProperty>
+    <StringProperty Name="MbedSTLinkUtilityEraseArgs" DisplayName="ST-Link Utility Erase Args"
+                Description="ST-Link Utility Args for erasing a chip"
+                Default="-ME">
+        <Argument Property="MbedSTLinkUtilityEraseArgs" />
+    </StringProperty>
+    <StringProperty Name="MbedSTLinkUtilityProgramArgs" DisplayName="ST-Link Utility Programming Args"
+                Description="ST-Link Utility Args for programming a chip"
+                Default="-P $(OutDir)\$(MbedOutputName).hex -ClrBP -HardRst -Halt">
+        <Argument Property="MbedSTLinkUtilityEraseArgs" />
+    </StringProperty>
+    <StringProperty Name="MbedGdbPath" DisplayName="Mbed GDB Path"
+                Default="$(Mbed_GCC)bin\arm-none-eabi-gdb.exe"
+                Description="Mbed GDB Path">
+        <Argument Property="MbedGdbPath" />
+    </StringProperty>
+    <StringProperty Name="MbedGdbArgs" DisplayName="Mbed GDB Args"
+                Description="Mbed GDB Args">
+        <Argument Property="MbedGdbArgs" />
+    </StringProperty>
+    <StringProperty Name="MbedDriveToCopyTo" DisplayName="Drive To Copy Binary To"
+                Description="Drive To Copy Binary To">
+        <Argument Property="MbedDriveToCopyTo" />
+    </StringProperty>
+    <EnumProperty Name="MbedGdbServerOption" DisplayName="Mbed GDB Server"
+                  Description="Which GDB server should be used for debugging"
+                  Default="pyocd">
+        <EnumValue Name="pyocd" DisplayName="pyOCD">
+            <Argument Property="MbedGdbServerOption"></Argument>
+        </EnumValue>
+        <EnumValue Name="openocd" DisplayName="OpenOCD">
+            <Argument Property="MbedGdbServerOption"></Argument>
+        </EnumValue>
+    </EnumProperty>
+
+    <EnumProperty Name="MbedDeployTool" DisplayName="Mbed Deploy Tool"
+                  Description="Which tool should be used for deploying"
+                  Default="pyocdflashtool">
+        <EnumValue Name="pyocdflashtool" DisplayName="pyOCD Flash Tool"></EnumValue>
+        <EnumValue Name="stlinkutility" DisplayName="ST-Link v2 Utility"></EnumValue>
+        <EnumValue Name="copytodrive" DisplayName="Copy To Drive"></EnumValue>
+        <EnumValue Name="gdbloadcommand" DisplayName="GDB Load Command"></EnumValue>
+        <EnumValue Name="nodeploy" DisplayName="Do Not Deploy"></EnumValue>
+    </EnumProperty>
+</Rule>

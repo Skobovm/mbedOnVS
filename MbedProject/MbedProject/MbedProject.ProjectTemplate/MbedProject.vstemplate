@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Mbed Project</Name>
+    <Description>A template for creating a MbedProject project.</Description>
+    <Icon>MbedProject.ico</Icon>
+    <ProjectType>VC</ProjectType>
+    <RequiredFrameworkVersion>4.5.2</RequiredFrameworkVersion>
+    <SortOrder>1</SortOrder>
+    <TemplateID>{1b7651c0-cc0d-4126-95f2-552ff936f8d8}</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MbedProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$projectname$.vcxproj" File="Native.vcxproj" ReplaceParameters="true">
+        <ProjectItem ReplaceParameters="false" TargetFileName="pch.h">pch.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Source.cpp">Source.cpp</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,7 @@
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Mbed Application VSIX\1.0\\MbedApplication.dll
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Mbed Application VSIX\1.0\\Microsoft.MIDebugEngine.dll
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Mbed Application VSIX\1.0\\MbedApplication.pkgdef
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Mbed Application VSIX\1.0\\extension.vsixmanifest
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Mbed Application VSIX\1.0\\MITLicense.txt
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Mbed Application VSIX\1.0\ProjectTemplates\MbedApplication\\1033\LlilumApplication.zip
+C:\Users\mikhas\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\LlilumApplication.ProjectType\Mbed Application VSIX\1.0\\MbedApplication.pdb
