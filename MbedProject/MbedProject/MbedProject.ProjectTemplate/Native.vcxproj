@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+      <CustomProjectExtensionsPath>$(LocalAppData)\CustomProjectSystems\MbedProject\</CustomProjectExtensionsPath>
+  </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|ARM">
       <Configuration>Debug</Configuration>
@@ -20,6 +23,7 @@
     <ToolchainPrebuiltPath>$(LLILUM_GCC)</ToolchainPrebuiltPath>
     <ProjectName>$safeprojectname$</ProjectName>
   </PropertyGroup>
+  <Import Project="$(CustomProjectExtensionsPath)CustomProject.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <!-- Supported platform property sheets -->
   <!--<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
@@ -269,7 +273,8 @@
   <ItemGroup Condition="'$(LlilumBoardName)'=='STM32F401'">
     <ArmAssemble Include="$(LlilumInteropFilePath)ARMv7M\Vectors\startup_stm32f401xe.S" />
   </ItemGroup>
-    
+
+  <Import Project="$(CustomProjectExtensionsPath)CustomProject.targets" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>

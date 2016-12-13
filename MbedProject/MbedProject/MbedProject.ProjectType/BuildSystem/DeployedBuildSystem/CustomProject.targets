@@ -73,6 +73,10 @@
     <PropertyPageSchema Include="$(MSBuildThisFileDirectory)Rules\MbedDebugger.xaml;">
       <Context>Project</Context>
     </PropertyPageSchema>
+
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)Rules\Mbed.xaml;">
+        <Context>Project</Context>
+    </PropertyPageSchema>
   </ItemGroup>
   
 </Project>

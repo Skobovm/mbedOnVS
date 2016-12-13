@@ -259,6 +259,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <XamlPropertyRule Include="BuildSystem\Rules\Mbed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </XamlPropertyRule>
     <XamlPropertyRule Include="BuildSystem\Rules\MbedDebugger.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

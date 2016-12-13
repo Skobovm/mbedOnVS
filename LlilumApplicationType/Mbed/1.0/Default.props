@@ -32,23 +32,23 @@ Copyright (C) Microsoft Corporation. All rights reserved.
     <!-- Use to list the option in the property page. -->
     <AvailibleArmArchitecture>armv6-m;armv7-ar;armv7e-m;armv7-m;cortex-m7;cortex-m3;cortex-m4</AvailibleArmArchitecture>
     
-    <!-- Llilum Config -->
-    <LlilumApplicationTypeDir>$(MSBuildExtensionsPath)\Microsoft.Cpp\v4.0\V140\Application Type\Llilum\1.0\</LlilumApplicationTypeDir>
-    <LlilumSDK>$(LLILUM_SDK)</LlilumSDK>
-    <LlilumLLVM>$(LLILUM_LLVM)build\x64\Debug\bin\</LlilumLLVM>
-    <LlilumTargetDir>$(LlilumSDK)mbed\</LlilumTargetDir>
-    <LlilumBoardName>LPC1768</LlilumBoardName>
-    <LlilumTargetBoard>TARGET_LPC1768</LlilumTargetBoard>
-    <LlilumTargetBrand>TARGET_NXP</LlilumTargetBrand>
-    <LlilumTargetToolchain>TOOLCHAIN_GCC_ARM</LlilumTargetToolchain>
-    <LlilumTargetClass>TARGET_LPC176X</LlilumTargetClass>
-    <LlilumTargetBoardMbed>TARGET_MBED_LPC1768</LlilumTargetBoardMbed>
-    <LlilumOutputName>$(SolutionName)</LlilumOutputName>
-    <LlilumGccBin>$(LLILUM_GCC)\bin\</LlilumGccBin>
-    <LlilumOutputBin>$(OutDir)\$(LlilumOutputName).bin</LlilumOutputBin>
-    <LlilumInteropFilePath>$(LlilumSDK)os_layer\</LlilumInteropFilePath>
-    <LlilumCompiler>$(LlilumSDK)\bin\Microsoft.Zelig.Compiler.exe</LlilumCompiler>
-    <LlilumConfig>$(MSBuildProjectDirectory)\mbed_simple_$(LlilumBoardName).FrontEndConfig</LlilumConfig>
+    <!-- Mbed Config -->
+    <MbedApplicationTypeDir>$(MSBuildExtensionsPath)\Microsoft.Cpp\v4.0\V140\Application Type\Mbed\1.0\</MbedApplicationTypeDir>
+    <MbedSDK>$(Mbed_SDK)</MbedSDK>
+    <MbedLLVM>$(Mbed_LLVM)build\x64\Debug\bin\</MbedLLVM>
+    <MbedTargetDir>$(MbedSDK)mbed\</MbedTargetDir>
+    <MbedBoardName>LPC1768</MbedBoardName>
+    <MbedTargetBoard>TARGET_LPC1768</MbedTargetBoard>
+    <MbedTargetBrand>TARGET_NXP</MbedTargetBrand>
+    <MbedTargetToolchain>TOOLCHAIN_GCC_ARM</MbedTargetToolchain>
+    <MbedTargetClass>TARGET_LPC176X</MbedTargetClass>
+    <MbedTargetBoardMbed>TARGET_MBED_LPC1768</MbedTargetBoardMbed>
+    <MbedOutputName>$(SolutionName)</MbedOutputName>
+    <MbedGccBin>$(Mbed_GCC)\bin\</MbedGccBin>
+    <MbedOutputBin>$(OutDir)\$(MbedOutputName).bin</MbedOutputBin>
+    <MbedInteropFilePath>$(MbedSDK)os_layer\</MbedInteropFilePath>
+    <MbedCompiler>$(MbedSDK)\bin\Microsoft.Zelig.Compiler.exe</MbedCompiler>
+    <MbedConfig>$(MSBuildProjectDirectory)\mbed_simple_$(MbedBoardName).FrontEndConfig</MbedConfig>
   </PropertyGroup>
 
   <!-- Import After -->

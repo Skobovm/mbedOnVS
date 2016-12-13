@@ -84,7 +84,6 @@ C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\bin\Debug\M
 C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\bin\Debug\Microsoft.VisualStudio.Debugger.Engine.xml
 C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\bin\Debug\Microsoft.VisualStudio.CoreUtility.xml
 C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\bin\Debug\Microsoft.MICore.XmlSerializers.dll
-C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\obj\Debug\MbedProject.ProjectType.csprojResolveAssemblyReference.cache
 C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\obj\Debug\BuildSystem\Rules\general.browseobject.baml
 C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\obj\Debug\MbedProject_MarkupCompile.cache
 C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\obj\Debug\MbedProject.g.resources

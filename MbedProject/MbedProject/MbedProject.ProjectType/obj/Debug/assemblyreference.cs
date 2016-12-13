@@ -338,7 +338,7 @@ namespace MbedProject {
 						Microsoft.Build.Framework.XamlTypes.Rule t = ((Microsoft.Build.Framework.XamlTypes.Rule)(ruleEnumerator.Current));
 						if (System.StringComparer.OrdinalIgnoreCase.Equals(t.Name, SchemaName)) {
 							unboundRule = t;
-							unboundRule.Name = "1d648bf6-78df-4bb1-b91a-fdae4967f5c0";
+							unboundRule.Name = "a8bb4b93-c51d-4ba4-8347-6db2d5b485c7";
 							AssemblyReference.deserializedFallbackRule = unboundRule;
 						}
 					}
