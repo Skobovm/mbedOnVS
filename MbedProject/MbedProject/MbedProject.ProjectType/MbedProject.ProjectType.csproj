@@ -161,12 +161,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MbedDebuggerLaunchProvider.cs" />
     <Compile Include="MbedDeployProvider.cs" />
     <Compile Include="MbedHelpers.cs" />
     <Compile Include="MyConfiguredProject.cs" />
     <Compile Include="MyUnconfiguredProject.cs" />
     <Compile Include="ProjectProperties.cs" />
+    <Compile Include="PyOCDLaunchProvider.cs" />
     <Compile Include="VsPackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -259,6 +259,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <XamlPropertyRule Include="BuildSystem\Rules\PyOCD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </XamlPropertyRule>
     <XamlPropertyRule Include="BuildSystem\Rules\Mbed.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

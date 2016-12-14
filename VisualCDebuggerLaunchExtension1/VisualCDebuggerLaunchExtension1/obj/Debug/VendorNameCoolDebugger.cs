@@ -8,34 +8,31 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MbedProject {
+namespace VisualCDebuggerLaunchExtension1.Rules {
 	
 	
-	internal partial class SourceControl {
+	internal partial class VendorNameCoolDebugger {
 		
 		/// <summary>Backing field for deserialized rule.<see cref='Microsoft.Build.Framework.XamlTypes.Rule'/>.</summary>
 		private static Microsoft.Build.Framework.XamlTypes.Rule deserializedFallbackRule;
 		
 		/// <summary>The name of the schema to look for at runtime to fulfill property access.</summary>
-		internal const string SchemaName = "SourceControl";
+		internal const string SchemaName = "VendorNameCoolDebugger";
 		
 		/// <summary>The ItemType given in the Rule.DataSource property.  May not apply to every Property's individual DataSource.</summary>
 		internal const string PrimaryDataSourceItemType = null;
 		
 		/// <summary>The Label given in the Rule.DataSource property.  May not apply to every Property's individual DataSource.</summary>
-		internal const string PrimaryDataSourceLabel = "Globals";
+		internal const string PrimaryDataSourceLabel = "";
 		
-		/// <summary> (The "SccProjectName" property).</summary>
-		internal const string SccProjectNameProperty = "SccProjectName";
+		/// <summary>The debug command to execute. (The "LocalDebuggerCommand" property).</summary>
+		internal const string LocalDebuggerCommandProperty = "LocalDebuggerCommand";
 		
-		/// <summary> (The "SccProvider" property).</summary>
-		internal const string SccProviderProperty = "SccProvider";
+		/// <summary>The command line arguments to pass to the application. (The "LocalDebuggerCommandArguments" property).</summary>
+		internal const string LocalDebuggerCommandArgumentsProperty = "LocalDebuggerCommandArguments";
 		
-		/// <summary> (The "SccAuxPath" property).</summary>
-		internal const string SccAuxPathProperty = "SccAuxPath";
-		
-		/// <summary> (The "SccLocalPath" property).</summary>
-		internal const string SccLocalPathProperty = "SccLocalPath";
+		/// <summary>The application's working directory. By default, the directory containing the project file. (The "LocalDebuggerWorkingDirectory" property).</summary>
+		internal const string LocalDebuggerWorkingDirectoryProperty = "LocalDebuggerWorkingDirectory";
 		
 		/// <summary>Backing field for the <see cref='Microsoft.Build.Framework.XamlTypes.Rule'/> property.</summary>
 		private Microsoft.VisualStudio.ProjectSystem.Properties.IRule rule;
@@ -61,13 +58,13 @@ namespace MbedProject {
 		/// <summary>Thread locking object</summary>
 		private object locker = new object();
 		
-		/// <summary>Initializes a new instance of the SourceControl class.</summary>
-		internal SourceControl(Microsoft.VisualStudio.ProjectSystem.Properties.IRule rule) {
+		/// <summary>Initializes a new instance of the VendorNameCoolDebugger class.</summary>
+		internal VendorNameCoolDebugger(Microsoft.VisualStudio.ProjectSystem.Properties.IRule rule) {
 			this.rule = rule;
 		}
 		
-		/// <summary>Initializes a new instance of the SourceControl class.</summary>
-		internal SourceControl(Microsoft.VisualStudio.ProjectSystem.ConfiguredProject configuredProject, System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog> catalogs, string context, string file, string itemType, string itemName) : 
+		/// <summary>Initializes a new instance of the VendorNameCoolDebugger class.</summary>
+		internal VendorNameCoolDebugger(Microsoft.VisualStudio.ProjectSystem.ConfiguredProject configuredProject, System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog> catalogs, string context, string file, string itemType, string itemName) : 
 				this(GetRule(System.Collections.Immutable.ImmutableDictionary.GetValueOrDefault(catalogs, context), file, itemType, itemName)) {
 			if ((configuredProject == null)) {
 				throw new System.ArgumentNullException("configuredProject");
@@ -79,8 +76,8 @@ namespace MbedProject {
 			this.itemName = itemName;
 		}
 		
-		/// <summary>Initializes a new instance of the SourceControl class.</summary>
-		internal SourceControl(Microsoft.VisualStudio.ProjectSystem.Properties.IRule rule, Microsoft.VisualStudio.ProjectSystem.ConfiguredProject configuredProject) : 
+		/// <summary>Initializes a new instance of the VendorNameCoolDebugger class.</summary>
+		internal VendorNameCoolDebugger(Microsoft.VisualStudio.ProjectSystem.Properties.IRule rule, Microsoft.VisualStudio.ProjectSystem.ConfiguredProject configuredProject) : 
 				this(rule) {
 			if ((rule == null)) {
 				throw new System.ArgumentNullException("rule");
@@ -95,13 +92,13 @@ namespace MbedProject {
 			this.itemName = this.rule.ItemName;
 		}
 		
-		/// <summary>Initializes a new instance of the SourceControl class.</summary>
-		internal SourceControl(Microsoft.VisualStudio.ProjectSystem.ConfiguredProject configuredProject, System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog> catalogs, string context, Microsoft.VisualStudio.ProjectSystem.Properties.IProjectPropertiesContext propertyContext) : 
+		/// <summary>Initializes a new instance of the VendorNameCoolDebugger class.</summary>
+		internal VendorNameCoolDebugger(Microsoft.VisualStudio.ProjectSystem.ConfiguredProject configuredProject, System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog> catalogs, string context, Microsoft.VisualStudio.ProjectSystem.Properties.IProjectPropertiesContext propertyContext) : 
 				this(configuredProject, catalogs, context, GetContextFile(propertyContext), propertyContext.ItemType, propertyContext.ItemName) {
 		}
 		
-		/// <summary>Initializes a new instance of the SourceControl class that assumes a project context (neither property sheet nor items).</summary>
-		internal SourceControl(Microsoft.VisualStudio.ProjectSystem.ConfiguredProject configuredProject, System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog> catalogs) : 
+		/// <summary>Initializes a new instance of the VendorNameCoolDebugger class that assumes a project context (neither property sheet nor items).</summary>
+		internal VendorNameCoolDebugger(Microsoft.VisualStudio.ProjectSystem.ConfiguredProject configuredProject, System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog> catalogs) : 
 				this(configuredProject, catalogs, "Project", null, null, null) {
 		}
 		
@@ -112,8 +109,8 @@ namespace MbedProject {
 			}
 		}
 		
-		/// <summary>SccProjectName</summary>
-		internal Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty SccProjectName {
+		/// <summary>The debug command to execute.</summary>
+		internal Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty LocalDebuggerCommand {
 			get {
 				Microsoft.VisualStudio.ProjectSystem.Properties.IRule localRule = this.rule;
 				if ((localRule == null)) {
@@ -122,18 +119,18 @@ namespace MbedProject {
 				if ((localRule == null)) {
 					return null;
 				}
-				Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(SccProjectNameProperty)));
+				Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(LocalDebuggerCommandProperty)));
 				if (((property == null) 
 							&& (this.GeneratedFallbackRule != null))) {
 					localRule = this.GeneratedFallbackRule;
-					property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(SccProjectNameProperty)));
+					property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(LocalDebuggerCommandProperty)));
 				}
 				return property;
 			}
 		}
 		
-		/// <summary>SccProvider</summary>
-		internal Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty SccProvider {
+		/// <summary>The command line arguments to pass to the application.</summary>
+		internal Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty LocalDebuggerCommandArguments {
 			get {
 				Microsoft.VisualStudio.ProjectSystem.Properties.IRule localRule = this.rule;
 				if ((localRule == null)) {
@@ -142,18 +139,18 @@ namespace MbedProject {
 				if ((localRule == null)) {
 					return null;
 				}
-				Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(SccProviderProperty)));
+				Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(LocalDebuggerCommandArgumentsProperty)));
 				if (((property == null) 
 							&& (this.GeneratedFallbackRule != null))) {
 					localRule = this.GeneratedFallbackRule;
-					property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(SccProviderProperty)));
+					property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(LocalDebuggerCommandArgumentsProperty)));
 				}
 				return property;
 			}
 		}
 		
-		/// <summary>SccAuxPath</summary>
-		internal Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty SccAuxPath {
+		/// <summary>The application&apos;s working directory. By default, the directory containing the project file.</summary>
+		internal Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty LocalDebuggerWorkingDirectory {
 			get {
 				Microsoft.VisualStudio.ProjectSystem.Properties.IRule localRule = this.rule;
 				if ((localRule == null)) {
@@ -162,31 +159,11 @@ namespace MbedProject {
 				if ((localRule == null)) {
 					return null;
 				}
-				Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(SccAuxPathProperty)));
+				Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(LocalDebuggerWorkingDirectoryProperty)));
 				if (((property == null) 
 							&& (this.GeneratedFallbackRule != null))) {
 					localRule = this.GeneratedFallbackRule;
-					property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(SccAuxPathProperty)));
-				}
-				return property;
-			}
-		}
-		
-		/// <summary>SccLocalPath</summary>
-		internal Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty SccLocalPath {
-			get {
-				Microsoft.VisualStudio.ProjectSystem.Properties.IRule localRule = this.rule;
-				if ((localRule == null)) {
-					localRule = this.GeneratedFallbackRule;
-				}
-				if ((localRule == null)) {
-					return null;
-				}
-				Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(SccLocalPathProperty)));
-				if (((property == null) 
-							&& (this.GeneratedFallbackRule != null))) {
-					localRule = this.GeneratedFallbackRule;
-					property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(SccLocalPathProperty)));
+					property = ((Microsoft.VisualStudio.ProjectSystem.Properties.IEvaluatedProperty)(localRule.GetProperty(LocalDebuggerWorkingDirectoryProperty)));
 				}
 				return property;
 			}
@@ -231,12 +208,12 @@ namespace MbedProject {
 			if ((this.configuredProject == null)) {
 				return;
 			}
-			Microsoft.Build.Framework.XamlTypes.Rule unboundRule = SourceControl.deserializedFallbackRule;
+			Microsoft.Build.Framework.XamlTypes.Rule unboundRule = VendorNameCoolDebugger.deserializedFallbackRule;
 			if ((unboundRule == null)) {
 				System.IO.Stream xamlStream = null;
 				System.Reflection.Assembly thisAssembly = System.Reflection.Assembly.GetExecutingAssembly();
 				try {
-					xamlStream = thisAssembly.GetManifestResourceStream("XamlRuleToCode:scc.xaml");
+					xamlStream = thisAssembly.GetManifestResourceStream("XamlRuleToCode:VendorNameCoolDebugger.xaml");
 					Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode root = ((Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode)(System.Xaml.XamlServices.Load(xamlStream)));
 					System.Collections.Generic.IEnumerator<System.Object> ruleEnumerator = root.GetSchemaObjects(typeof(Microsoft.Build.Framework.XamlTypes.Rule)).GetEnumerator();
 					for (
@@ -246,8 +223,8 @@ namespace MbedProject {
 						Microsoft.Build.Framework.XamlTypes.Rule t = ((Microsoft.Build.Framework.XamlTypes.Rule)(ruleEnumerator.Current));
 						if (System.StringComparer.OrdinalIgnoreCase.Equals(t.Name, SchemaName)) {
 							unboundRule = t;
-							unboundRule.Name = "ef0d1517-65eb-4f66-afac-8a0a5b9fb482";
-							SourceControl.deserializedFallbackRule = unboundRule;
+							unboundRule.Name = "a41e73b5-90dd-4b0d-a888-9e697200443f";
+							VendorNameCoolDebugger.deserializedFallbackRule = unboundRule;
 						}
 					}
 				}
@@ -263,19 +240,19 @@ namespace MbedProject {
 		}
 	}
 	
-	internal partial class ProjectProperties {
+	internal partial class RuleProperties {
 		
-		private static System.Func<System.Threading.Tasks.Task<System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog>>, object, SourceControl> CreateSourceControlPropertiesDelegate = new System.Func<System.Threading.Tasks.Task<System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog>>, object, SourceControl>(CreateSourceControlProperties);
+		private static System.Func<System.Threading.Tasks.Task<System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog>>, object, VendorNameCoolDebugger> CreateVendorNameCoolDebuggerPropertiesDelegate = new System.Func<System.Threading.Tasks.Task<System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog>>, object, VendorNameCoolDebugger>(CreateVendorNameCoolDebuggerProperties);
 		
-		private static SourceControl CreateSourceControlProperties(System.Threading.Tasks.Task<System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog>> namedCatalogs, object state) {
-			ProjectProperties that = ((ProjectProperties)(state));
-			return new SourceControl(that.ConfiguredProject, namedCatalogs.Result, "Project", that.File, that.ItemType, that.ItemName);
+		private static VendorNameCoolDebugger CreateVendorNameCoolDebuggerProperties(System.Threading.Tasks.Task<System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog>> namedCatalogs, object state) {
+			RuleProperties that = ((RuleProperties)(state));
+			return new VendorNameCoolDebugger(that.ConfiguredProject, namedCatalogs.Result, "Project", that.File, that.ItemType, that.ItemName);
 		}
 		
-		/// <summary>Gets the strongly-typed property accessor used to get and set General properties.</summary>
-		internal System.Threading.Tasks.Task<SourceControl> GetSourceControlPropertiesAsync() {
+		/// <summary>Gets the strongly-typed property accessor used to get and set VendorName Cool Debugger options properties.</summary>
+		internal System.Threading.Tasks.Task<VendorNameCoolDebugger> GetVendorNameCoolDebuggerPropertiesAsync() {
 			System.Threading.Tasks.Task<System.Collections.Immutable.IImmutableDictionary<string, Microsoft.VisualStudio.ProjectSystem.Properties.IPropertyPagesCatalog>> namedCatalogsTask = this.GetNamedCatalogsAsync();
-			return namedCatalogsTask.ContinueWith(CreateSourceControlPropertiesDelegate, this, System.Threading.CancellationToken.None, System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously, System.Threading.Tasks.TaskScheduler.Default);
+			return namedCatalogsTask.ContinueWith(CreateVendorNameCoolDebuggerPropertiesDelegate, this, System.Threading.CancellationToken.None, System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously, System.Threading.Tasks.TaskScheduler.Default);
 		}
 	}
 }

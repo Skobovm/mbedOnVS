@@ -95,3 +95,4 @@ C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\obj\Debug\M
 C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\obj\Debug\MbedProject.pkgdef
 C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\obj\Debug\MbedProject.latest.pkgdef
 C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\obj\Debug\extension.vsixmanifest
+C:\MbedOnVs\mbedOnVS\MbedProject\MbedProject\MbedProject.ProjectType\obj\Debug\MbedProject.ProjectType.csprojResolveAssemblyReference.cache
