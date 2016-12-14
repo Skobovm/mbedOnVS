@@ -16,8 +16,10 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$projectname$.vcxproj" File="Native.vcxproj" ReplaceParameters="true">
-        <ProjectItem ReplaceParameters="false" TargetFileName="pch.h">pch.h</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="Source.cpp">Source.cpp</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">Project1.vcxproj.filters</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="main.cpp">main.cpp</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="mbed_config.h">mbed_config.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Makefile">Makefile</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

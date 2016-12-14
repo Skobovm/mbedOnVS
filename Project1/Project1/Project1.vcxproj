@@ -97,20 +97,52 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <NMakeBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe" clean</NMakeCleanCommandLine>
+    <NMakeIncludeSearchPath>C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TOOLCHAIN_GCC_ARM;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\TARGET_MBED_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\device;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\drivers;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\platform;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\hal;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <NMakeIncludeSearchPath>C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TOOLCHAIN_GCC_ARM;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\TARGET_MBED_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\device;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\drivers;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\platform;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\hal;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe" clean</NMakeCleanCommandLine>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <NMakeBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe" clean</NMakeCleanCommandLine>
+    <NMakeIncludeSearchPath>C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TOOLCHAIN_GCC_ARM;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\TARGET_MBED_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\device;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\drivers;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\platform;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\hal;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <NMakeIncludeSearchPath>C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TOOLCHAIN_GCC_ARM;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\TARGET_MBED_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\device;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\drivers;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\platform;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\hal;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe" clean</NMakeCleanCommandLine>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NMakeBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe" clean</NMakeCleanCommandLine>
+    <NMakeIncludeSearchPath>C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TOOLCHAIN_GCC_ARM;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\TARGET_MBED_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\device;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\drivers;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\platform;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\hal;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeIncludeSearchPath>C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TOOLCHAIN_GCC_ARM;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\TARGET_MBED_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\device;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\drivers;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\platform;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\hal;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe" clean</NMakeCleanCommandLine>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <NMakeBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe" clean</NMakeCleanCommandLine>
+    <NMakeIncludeSearchPath>C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TOOLCHAIN_GCC_ARM;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\TARGET_MBED_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\device;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\drivers;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\platform;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\hal;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <NMakeIncludeSearchPath>C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TOOLCHAIN_GCC_ARM;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\TARGET_MBED_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X\device;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768\TARGET_NXP\TARGET_LPC176X;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\TARGET_LPC1768;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\drivers;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\platform;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed\hal;C:\MbedOnVs\mbedOnVS\Project1\Project1\mbed;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"C:\Program Files (x86)\GnuWin32\bin\make.exe" clean</NMakeCleanCommandLine>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
   </ItemDefinitionGroup>
